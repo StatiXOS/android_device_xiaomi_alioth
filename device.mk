@@ -29,6 +29,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libpiex_shim
 
+# Display
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/display/display_id_4630946736638489729.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946736638489729.xml
+
 # Kernel
 TARGET_KERNEL_DIR ?= device/xiaomi/alioth-kernel
 LOCAL_KERNEL := $(TARGET_KERNEL_DIR)/Image
